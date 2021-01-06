@@ -12,15 +12,11 @@
      align-items: center;
      justify-content: space-between;
  }
-
- div#logoContainer {
-    height: 100px;
-    width: 230px;
-    flex: 2 0 230px;
-    display: flex;
-    align-items: center;
-    
- }
+ 
+ div#menuContainer {
+  order: 3;
+  width: 100%;
+}
 
  img.logo {
      margin-left: 20px;
@@ -35,14 +31,21 @@
      justify-content: space-evenly;
  }
 
- @media (max-width: 700px) {
-     div#menuContainer {
-         order: 3;
-         width: 100%;
-     }
+ @media (min-width: 700px) {
+    div#logoContainer {
+      height: 100px;
+      width: 230px;
+      flex: 2 0 230px;
+      display: flex;
+      align-items: center;
+      
+  }
  }
+ 
 
  a.menuLink {
+  width: 50%;
+  border-bottom: 4px solid lightgray;
      box-sizing: border-box;
      display: block;
      height: 70px;
@@ -50,24 +53,24 @@
      text-decoration: none;
      line-height: 70px;
      text-align: center;
+}
+a.menuLink.active {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid #0065FC;
+     color:#0065FC ; 
+}
+
+
+
+
+ @media (min-width: 700px)  {
+  a.menuLink {
      border-top: 4px solid transparent;
      border-bottom: 4px solid transparent;
- }
-
+  }
  a.menuLink.active {
-     color:#0065FC ; 
      border-top: 4px solid #0065FC;
  }
-
- @media (max-width: 700px)  {
-     a.menuLink {
-         width: 50%;
-         border-bottom: 4px solid lightgray;
-     }
-     a.menuLink.active {
-         border-top: 4px solid transparent;
-         border-bottom: 4px solid #0065FC;
-     }
  }
 
 a#registerContainer {
@@ -92,11 +95,4 @@ section {
         text-align: center;
         
     }
-
-
-
-
-
-
-
-
+}
