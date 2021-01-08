@@ -2,6 +2,7 @@
 
  body {
      margin : 0;
+     font-family: Raleway;
  }
 
  header {
@@ -91,4 +92,75 @@ section {
         width: 80%;
         text-align: center;
         }
+
+        }
+    
+    .nature {
+        font-family: Raleway;
     }
+
+    .div {
+        margin-top: 20px;
+        height: 50px;
+        display: flex;
+        width: max-content;
+        border-radius: 14px;
+        overflow: hidden;
+        
+    }
+
+    i.fas.fa-map-marker-alt {
+        background-color: #F2F2F2;
+        text-align: center;
+        height:50px;
+        width: 50px;
+        vertical-align:middle;
+        line-height: 50px;
+
+
+    }
+
+    input#searchcity {
+        height: 50px;
+        width: 220px;
+        border : none ;
+        border-top: 2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 0px; 
+        box-sizing: border-box;
+    }
+
+    input::placeholder {
+       
+        font-weight: bold ;
+        font-size: 1.1rem;
+        color: #1B1B1B;
+        padding-left: 30px;
+
+      }
+
+.button {
+    background-color: #0065FC;
+    color:#FDFEFF;
+    height: 50px;
+    font-family: Raleway;
+    font-size: 1.2rem ;
+    border: none;
+    padding-right: 15px;
+    padding-left : 15px ; 
+}
+.button .mobile {
+    display: none;
+}
+
+@media (max-width: 700px)  {
+    .button .desktop {
+        display: none;
+    }
+    .button .mobile {
+        display: block;
+    }
+    .button {
+        border-radius: 14px ;
+    }
+}
