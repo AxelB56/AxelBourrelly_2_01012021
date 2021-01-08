@@ -1,48 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="projet2re.css" />
-    <title> Reservia </title>
-</head>
-<body>
+    <title>Reservia</title>
+  </head>
+  <body>
+    <header>
+      <div id="logoContainer">
+        <img class="logo" src="Reservia.png" alt=" reservia" />
+      </div>
 
-            <header>
-        
-        <div id="logoContainer"> 
-            <img class="logo" src="Reservia.png" alt=" reservia" />
-        </div>      
-    
-    <div id="menuContainer"> 
-
+      <div id="menuContainer">
         <a href="/hébergement" class="menuLink active"> hébergement </a>
         <a href="/activité" class="menuLink"> activité </a>
+      </div>
 
-    </div>
+      <a href="/inscription" id="registerContainer"> s'inscrire </a>
+    </header>
 
-        <a href="/inscription" id="registerContainer"> s'inscrire </a>
-    
+    <section id="informations">
+      <h1>Trouvez votre hébergement pour des vacences de rêve</h1>
+      <div class="nature">En plein centre ville ou en pleine nature</div>
 
-            </header>
-
-    <section> 
-
-        <h1 class="vac"> Trouvez votre hébergement pour des vacences de rêve </h1>
-        <div class="nature"> En plein centre ville ou en pleine nature </div>
-
-        <div class="div"> 
-        <label for="searchcity"><i class="fas fa-map-marker-alt"></i></label><input id="searchcity" type="text" placeholder="Marseille,France">
+      <form class="div">
+        <label for="searchcity">
+          <i class="fas fa-map-marker-alt"></i>
+        </label>
+        <input id="searchcity" type="text" placeholder="Marseille,France" />
         <button class="button"></button>
-        </div>  
-
+      </form>
     </section>
 
+  <main>
+    <section id="hebergements">
+      <h1>hébergements à Marseille</h1>
+      <article>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Holtel_particulier_%C3%A0_Evreux.jpg/1024px-Holtel_particulier_%C3%A0_Evreux.jpg">
+        <h2>hotel bidule</h2>
+        <p>nuit à partir de 25€</p>
+        <div class="stars fourStars"></div>
+      </article>
+      <article>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Holtel_particulier_%C3%A0_Evreux.jpg/1024px-Holtel_particulier_%C3%A0_Evreux.jpg">
+        <h2>hotel bidule</h2>
+        <p>nuit à partir de 25€</p>
+        <div class="stars fiveStars"></div>
+      </article>
+      <article>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Holtel_particulier_%C3%A0_Evreux.jpg/1024px-Holtel_particulier_%C3%A0_Evreux.jpg">
+        <h2>hotel bidule</h2>
+        <p>nuit à partir de 25€</p>
+        <div class="stars threeStars"></div>
+      </article>
+      <article class="horizontale">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Holtel_particulier_%C3%A0_Evreux.jpg/1024px-Holtel_particulier_%C3%A0_Evreux.jpg">
+        <h2>hotel bidule</h2>
+        <p>nuit à partir de 25€</p>
+        <div class="stars fourStars"></div>
+      </article>
+      <article>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Holtel_particulier_%C3%A0_Evreux.jpg/1024px-Holtel_particulier_%C3%A0_Evreux.jpg">
+        <h2>hotel bidule</h2>
+        <p>nuit à partir de 25€</p>
+        <div class="stars fourStars"></div>
+      </article>
+      <article>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Holtel_particulier_%C3%A0_Evreux.jpg/1024px-Holtel_particulier_%C3%A0_Evreux.jpg">
+        <h2>hotel bidule</h2>
+        <p>nuit à partir de 25€</p>
+        <div class="stars fourStars"></div>
+      </article>
+    </section>
     
-
-
-    
-</body>
+    <section></section>
+  </main>
+  </body>
 </html>

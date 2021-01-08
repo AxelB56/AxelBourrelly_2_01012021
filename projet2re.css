@@ -41,6 +41,24 @@ div#menuContainer {
     width: 100%;
   }
 }
+article.horizontale {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 5rem;
+}
+
+article.horizontale img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+  width:100%;
+  height:100%;
+}
+
+article {
+    background-color: white;
+}
 
 a.menuLink {
   box-sizing: border-box;
@@ -84,6 +102,54 @@ a#registerContainer {
 
 section {
   margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+section#informations {
+  flex-direction: column;
+}
+
+h1 {
+  width: 100%;
+}
+
+article img {
+  max-width: 200px;
+}
+
+.stars {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+}
+
+.stars::before {
+  color: blue;
+}
+.stars::after {
+  color: grey;
+}
+
+.threeStars::before {
+  content: "\f005\f005\f005";
+}
+
+.threeStars::after {
+  content: "\f005\f005";
+}
+
+.fourStars::before {
+  content: "\f005\f005\f005\f005";
+}
+
+.fourStars::after {
+  content: "\f005";
+}
+
+
+.fiveStars::before {
+  content: "\f005\f005\f005\f005\f005";
 }
 
 @media (max-width: 700px) {
