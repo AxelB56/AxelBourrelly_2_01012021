@@ -142,9 +142,6 @@ input::placeholder {
   padding-right: 15px;
   padding-left: 15px;
 }
-.button .mobile {
-  display: none;
-}
 
 button.button:after {
   content: "\f002";
@@ -154,21 +151,12 @@ button.button:after {
 }
 
 @media screen AND (min-width: 768px) {
+  .button {
+    border-radius: 14px;
+  }
   button.button:after {
     content: "recherher";
     font-family: "Raleway";
     font-weight: initial;
-  }
-}
-
-@media (max-width: 700px) {
-  .button .desktop {
-    display: none;
-  }
-  .button .mobile {
-    display: block;
-  }
-  .button {
-    border-radius: 14px;
   }
 }
