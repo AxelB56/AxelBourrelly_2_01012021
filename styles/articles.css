@@ -1,0 +1,50 @@
+article {
+  background-color: white;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px var(--couleur2);
+  border-radius: 1rem;
+}
+
+article img{
+  border:3px solid white;
+  object-fit: cover;
+  width: calc(100% - 6px);
+  border-radius: 1rem  1rem 0 0;
+}
+
+#populaires article {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 10rem;
+  grid-template-areas:
+    "image titre"
+    "image texte"
+    "image etoiles";
+  width: 100%;
+  column-gap: 10px;
+}
+
+#populaires article *{
+  margin:0;
+  padding:0;
+}
+
+#populaires article img {
+  width: 100%;
+  height: calc(100% - 6px);
+  border-radius: 1rem 0 0 1rem;
+  grid-area: image;
+}
+
+#populaires article h2{
+  grid-area: titre;
+}
+#populaires article p{
+  grid-area: texte;
+}
+
+#populaires article div{
+  grid-area: etoiles;
+}

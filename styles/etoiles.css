@@ -1,0 +1,32 @@
+.stars {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+}
+
+.stars::before {
+  color: var(--couleur3);
+}
+
+.stars::after {
+  color: var(--couleur2);
+}
+
+.threeStars::before {
+  content: "\f005\f005\f005";
+}
+
+.threeStars::after {
+  content: "\f005\f005";
+}
+
+.fourStars::before {
+  content: "\f005\f005\f005\f005";
+}
+
+.fourStars::after {
+  content: "\f005";
+}
+
+.fiveStars::before {
+  content: "\f005\f005\f005\f005\f005";
+}
