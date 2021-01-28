@@ -1,14 +1,14 @@
-
-.contain {
+footer {
     background-color: #F2F2F2;
-
+    padding-top: 1rem;
 }
-
-h1 {
+footer ul::before {
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: bold;    
+    content: attr(aria-label);
 }
 
 li {
     list-style-type: none;
+    margin-top:.5rem;
 }

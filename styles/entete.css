@@ -97,12 +97,14 @@ img.logo {
 
 i.fa-info {
   border: 0.5px solid var(--couleur2);
-  width: fit-content;
+  width: 2rem;
   align-items: center;
-  padding-left: 0.5rem;
-  border-radius: 0.5rem;
-  padding-right: 0.5rem;
+  border-radius: 50%;
   color: #0065fc;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a.menuLink:first-of-type {

@@ -18,7 +18,7 @@ body {
 }
 
 section {
-  max-width: 90vw;
+  max-width: 95vw;
   margin: auto;
   /* border: 1px solid red; */
 }
@@ -38,4 +38,8 @@ section#populaires {
     padding: 0 5vw;
     background-color: var(--couleur4);
 }
-
+p.para {
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+    width: 100%;
+}
