@@ -2,6 +2,7 @@
 @import url("entete.css");
 @import url("etoiles.css");
 @import url("articles.css");
+@import url("footer.css");
 
 :root {
   --couleur1: #deebff;
@@ -23,8 +24,9 @@ section {
 }
 section h1 {
     width: 100%;
-    DISPLAY: FLEX;
+    display: flex;
     justify-content: space-between;
+    font-size: 1.4em;
 }
 main {
   display: flex;
@@ -36,3 +38,4 @@ section#populaires {
     padding: 0 5vw;
     background-color: var(--couleur4);
 }
+

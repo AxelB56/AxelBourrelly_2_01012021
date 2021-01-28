@@ -12,6 +12,7 @@ article img{
   object-fit: cover;
   width: calc(100% - 6px);
   border-radius: 1rem  1rem 0 0;
+  max-height: 100px;
 }
 
 #populaires article {
@@ -31,6 +32,10 @@ article img{
   padding:0;
 }
 
+#populaires h2 {
+  font-size: 1.3rem;
+}
+
 #populaires article img {
   width: 100%;
   height: calc(100% - 6px);
@@ -48,3 +53,4 @@ article img{
 #populaires article div{
   grid-area: etoiles;
 }
+
