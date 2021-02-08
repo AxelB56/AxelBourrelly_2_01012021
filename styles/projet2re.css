@@ -9,6 +9,7 @@
   --couleur2: #d9d9d9;
   --couleur3: #0065fc;
   --couleur4: #f2f2f2;
+  --ombre: 0px 0px 1rem #bfbfbf;
 }
 
 section {
@@ -30,6 +31,7 @@ main {
 .para {
   font-size: 1rem;
   display: flex;
+  align-items: center;
 }
 
 i.fas.fa-map-marker-alt {
