@@ -12,3 +12,12 @@ li {
     list-style-type: none;
     margin-top:.5rem;
 }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer ul li {
+    padding: 0.5rem 0rem;
+  }

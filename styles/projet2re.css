@@ -11,35 +11,104 @@
   --couleur4: #f2f2f2;
 }
 
-body {
-  margin: 0;
-  font-family: Raleway;
-  padding: 0;
-}
-
 section {
   max-width: 95vw;
   margin: auto;
   /* border: 1px solid red; */
 }
 section h1 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4em;
 }
 main {
   display: flex;
   flex-direction: column-reverse;
 }
 
-section#populaires {
-    max-width: 100vw;
-    padding: 0 5vw;
-    background-color: var(--couleur4);
+.para {
+  font-size: 1rem;
+  display: flex;
 }
-p.para {
-    display: grid;
-    grid-template-columns: 2.5rem auto;
+
+i.fas.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+input#searchcity {
+  height: 50px;
+  width: 210px;
+  max-width: 72%;
+  border: none;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1b1b1b;
+  padding-left: 30px;
+}
+
+.button {
+  background-color: #0065fc;
+  color: #fdfeff;
+  height: 50px;
+  font-family: Raleway;
+  font-size: 1.2rem;
+  border: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.div {
+  padding-top: 20px;
+}
+
+button.button:after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  div#menuContainer {
+    order: 3;
     width: 100%;
+  }
 }
+
+@media screen AND (min-width: 768px) {
+  .button {
+    border-radius: 14px;
+  }
+
+  button.button:after {
+    content: "rechercher";
+    font-family: "Raleway";
+    font-weight: initial;
+  }
+}
+
+h2,section {
+  font-size: 1.1rem;
+}
+
+
+.maincontainer {
+  display: flex;
+  width: 100%;
+}
+
+

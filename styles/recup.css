@@ -91,17 +91,6 @@ button.button:after {
   }
 }
 
-/** 
-@media screen AND (max-width: 768px) {
-  #hebergements.grid-container-3 {
-    {
-    display: grid;
-    grid-template-columns: repeat(1 ) 
-  }
-}
-
-*/
-
 #hebergements .grid-container-3 {
   row-gap: 20px;
   column-gap: 20px;
@@ -191,7 +180,7 @@ main {
   width: 100%;
 }
 
-/*fin hebergement fin populaire */
+
 
 .bloc {
   display: grid;
@@ -201,3 +190,4 @@ main {
 .grid-container-3 p{
   font-size: bold;
 }
+

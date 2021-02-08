@@ -13,12 +13,24 @@
   </head>
 
   <body>
-    <header>
-      <img class="logo" src="images/reservia.png" alt=" reservia" />
-      <a href="#hebergements" class="menuLink active"> hébergement </a>
-      <a href="/activité" class="menuLink"> activité </a>
-      <a href="/inscription" id="registerContainer"> s'inscrire </a>
-    </header>
+  <header>
+      <div class="logoreservia"> 
+          <img src="images/reserviaa.png" alt=" reservia" />
+          <a href="#" class="respsignup">S'inscrire</a>
+      </div>
+
+      <nav class="navmenu"> 
+        <a href="#hebergements"> Hébergement </a>
+        <a href="/activité">  Activité </a>
+        <a href="/inscription"> <span>S'inscrire</span></a>
+      </nav>
+
+      <nav class="navresponsive">
+        <a href="#host">Hébergements</a>
+        <a href="#activity">Activités</a>
+      </nav>
+
+  </header>
 
     <section id="informations">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -46,48 +58,59 @@
     </section>
 
     <main>
+    <div class="maincontainer"> 
       <section id="hebergements">
         <h1 id="marseille">Hébergements à Marseille</h1>
-        <div class="grid-container-3">
           <article>
-            <img class="auberge" src="images/auberge-la-cannebiere.jpg" alt=""/>
-            <h2>Auberge la Cannebière</h2>
-            <p>Nuit à partir de <b> 25€ </b></p>
-            <div class="stars fourStars"></div>
+            <img class="auberge" src="images/auberge-lacannebiere.jpg" alt=""/>
+              <div class="hostcontent"> 
+                <h2>Auberge la Cannebière</h2>
+                <p>Nuit à partir de <b>25€</b></p>
+                <div class="stars fourStars"></div>
+              </div>
           </article>
           <article>
             <img class="auberge" src="images/hotel-du-port.jpg" alt=""/>
-            <h2>Hôtel du port</h2>
-            <p>Nuit à partir de 52€</p>
-            <div class="stars fiveStars"></div>
+              <div class="hostcontent">
+                <h2>Hôtel du port</h2>
+                <p>Nuit à partir de 52€</p>
+                <div class="stars fiveStars"></div>
+              </div>
           </article>
           <article>
             <img class="auberge" src="images/hotel-les-mouettes.jpg" alt=""/>
-            <h2>Hôtel Les mouettes</h2>
-            <p>Nuit à partir de 76€</p>
-            <div class="stars fourStars"></div>
+              <div class="hostcontent">
+                <h2>Hôtel Les mouettes</h2>
+                <p>Nuit à partir de 76€</p>
+                <div class="stars fourStars"></div>
+              </div>
           </article>
           <article>
             <img class="auberge" src="images/hotel-de-la-mer.jpg" alt=""/>
-            <h2>hôtel de la mer</h2>
-            <p>Nuit à partir de 46€</p>
-            <div class="stars threeStars"></div>
+              <div class="hostcontent">
+                <h2>hôtel de la mer</h2>
+                <p>Nuit à partir de 46€</p>
+                <div class="stars threeStars"></div>
+              </div>
           </article>
           <article>
-            <img class="auberge" src="images/auberge-le-panier.jpg" alt=""/>
-            <h2>Auberge Le Panier</h2>
-            <p>Nuit à partir de <b> 23€ </b></p>
-            <div class="stars fourStars"></div>
+            <img class="auberge" src="images/auberge-lepanier.jpg" alt=""/>
+              <div class="hostcontent">
+                <h2>Auberge Le Panier</h2>
+                <p>Nuit à partir de <b> 23€ </b></p>
+                <div class="stars fourStars"></div>
+              </div>
           </article>
           <article>
             <img class="auberge" src="images/hotel-chez-amina.jpg" alt=""/>
-
-            <h2>Hôtel chez Amina</h2>
-            <p>Nuit à partir de 96€</p>
-            <div class="stars fiveStars"></div>
+            <div class="hostcontent">
+                <h2>Hôtel chez Amina</h2>
+                <p>Nuit à partir de 96€</p>
+                <div class="stars fiveStars"></div>
+            </div>
+            <a class="afficherp" href="#"> Afficher plus </a>
           </article>
-        </div>
-        <p id="afficher">Afficher plus</p>
+
       </section>
       <section id="populaires">
         <h1 id="pop">
@@ -96,72 +119,94 @@
 
         <article>
           <img src="images/hotel-le-soleil-du-matin.jpg" alt=""/>
-          <h2>Hôtel Le soleil du matin</h2>
-          <p>Nuit à partir de 128€</p>
-          <div class="stars fiveStars"></div>
+            <div> 
+              <h2>Hôtel Le soleil du matin</h2>
+              <p>Nuit à partir de 128€</p>
+              <div class="stars fiveStars"></div>
+            </div>
         </article>
         <article>
           <img src="images/au-coeur-de-l-eau.jpg" alt=""/>
-          <h2>Au coeur de l'eau Chambres d'hôtes</h2>
-          <p>Nuit à partir de 71€</p>
-          <div class="stars fourStars"></div>
+            <div>
+              <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+              <p>Nuit à partir de 71€</p>
+              <div class="stars fourStars"></div>
+            </div>
         </article>
         <article>
           <img src="images/hotel-tout-bleu-et-blanc.jpg" alt=""/>
-          <h2>Hôtel Tout bleu et Blanc</h2>
-          <p>Nuit à partir de 68€</p>
-          <div class="stars fourStars"></div>
+            <div> 
+              <h2>Hôtel Tout bleu et Blanc</h2>
+              <p>Nuit à partir de 68€</p>
+              <div class="stars fourStars"></div>
+            </div>
         </article>
       </section>
+    </div>
     </main>
 
-    <section>
-      <h1 id="acti">Activités à Marseille</h1>
-      <article>
-        <img src="images/vieux-port.jpg" alt=""/>
-        <h2>Vieux port</h2>
-      </article>
-      <article>
-        <img src="images/fort-de-pomègues.jpg" alt=""/>
-        <h2>Fort de Pomègues</h2>
-      </article>
-      <article>
-        <img src="images/iles.jpg" alt=""/>
-        <h2>ïles du Frioul</h2>
-      </article>
-      <article>
-        <img src="images/parc-national.jpg" alt=""/>
-        <h2>Parc National des Calenques</h2>
-      </article>
-      <article>
-        <img src="images/notre-dame.jpg" alt=""/>
-        <h2>Notre-Dame-de-la-Garde</h2>
-      </article>
-      <article>
-        <img src="images/parc-longchamp.jpg" alt=""/>
-        <h2>Parc Longchamp</h2>
-      </article>
-    </section>
+    
+    <div class="activite"> 
+      <section>
+        <h1> Activités à Marseille </h1>
+        <article>
+          <img src="images/vieux-port.jpg" alt=""/>
+          <h2>Vieux port</h2>
+        </article>
+        <article>
+          <img src="images/fort-de-pomegues.jpg" alt=""/>
+          <h2>Fort de Pomègues</h2>
+        </article>
+        <article>
+          <img src="images/ile.jpg" alt=""/>
+          <h2>ïles du Frioul</h2>
+        </article>
+        <article>
+          <img src="images/parc-national.jpg" alt=""/>
+          <h2>Parc National des Calenques</h2>
+        </article>
+        <article>
+          <img src="images/notre-damee.jpg" alt=""/>
+          <h2>Notre-Dame-de-la-Garde</h2>
+        </article>
+        <article>
+          <img src="images/parc-longchamp.jpg" alt=""/>
+          <h2>Parc Longchamp</h2>
+        </article>
+      </section>
+  </div>
 
     <footer>
+      
       <nav>
-        <h1>A propos</h1>
-        <a href="">Fonctionnement du site</a>
-        <a href="">Conditions générales de vente</a>
-        <a href="">Données et confidentialité</a>
+    <ul>
+      
+      <li> <span> A propos </span> </li>
+      <li> <a href="#">Fonctionnement du site</a> </li>
+      <li> <a href="#">Conditions générales de vente</a> </li>
+      <li> <a href="#">Données et confidentialité</a> </li>
+      </nav>
+    </ul>
+
+    <ul> 
+      <nav>
+      <li> <span> Nos hebergements </span> </li>
+      <li> <a href="#">Charte qualité</a> </li>
+      <li> <a href="#">Soumettre votre hôtel</a> </li>
+      </nav>
+    </ul>
+
+    <ul>
+      <nav>
+        
+        <li>  <span> Assistance </span> </li>
+        <li> <a href="#">Centre d'aide</a> </li>
+        <li> <a href="#">Nous Contacter</a> </li>
       </nav>
 
-      <nav>
-        <h1>Nos Hébergements</h1>
-        <a href="">Charte qualité</a>
-        <a href="">Soumettre votre hôtel</a>
-      </nav>
+    </ul>
 
-      <nav>
-        <h1>Assistance</h1>
-        <a href="">Centre d'aide</a>
-        <a href="">Nous Contacter</a>
-      </nav>
+
     </footer>
   </body>
 </html>
