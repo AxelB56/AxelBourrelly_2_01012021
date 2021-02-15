@@ -11,10 +11,22 @@
   --couleur4: #f2f2f2;
   --ombre: 0px 0px 1rem #bfbfbf;
 }
+* {
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+
+body > * {
+
+    max-width: 1440px;
+    margin:auto;
+  width: 100%;
+}
+
 
 section {
-  max-width: 95vw;
-  margin: auto;
+/*   max-width: 95vw; */
+  /* margin: auto; */
   /* border: 1px solid red; */
 }
 section h1 {
