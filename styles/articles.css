@@ -1,5 +1,6 @@
 /****************** desktop ***************/
 /******************************************/
+
 body{
   font-family: Raleway, Arial, Helvetica, sans-serif;
   padding: 0;
@@ -119,6 +120,11 @@ main {
   padding: 0rem 0.2rem;
 }
 
+.afficherp {
+  color: black;
+  text-decoration: none;
+}
+
 /*** POPULAIRES ***/
 #populaires{
   background: var(--couleur4);
@@ -162,10 +168,21 @@ main {
 
 /*** ACTIVITY ***/
 
-.activite{
-
+/* .activite{
   padding-bottom: 1rem;
-}
+} */
+
+.activite{
+  display: grid;
+  grid-template-areas:
+  "titre titre titre titre"
+  "image1 image2 image4 image5"
+  "image1 image2 image4 ."
+  "image1 . image4 image6"
+  "image1 image3 image4 image6";
+  grid-template-rows: auto 14rem 3rem 3rem 14rem;
+  grid-column-gap: 1rem;
+  }
 
 /**** FOOTER ****/
 footer ul li span {
@@ -227,8 +244,6 @@ footer a {
     display: flex;
     align-items: center;
 }
-
-
 
 /********** smarthphone **********/
 /*********************************/
@@ -382,13 +397,6 @@ footer a {
     padding:0;
   }
 
-  .afficherp {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-
   #hostcontent , h2 , p {
     margin:0;
   }
@@ -429,7 +437,7 @@ footer a {
 /************** tablette *************/
 /*************************************/
 
-@media (min-width: 400px ) {
+@media screen and (max-width:1024px) {
 
   header {
       display: flex;
@@ -482,7 +490,20 @@ footer a {
     width: auto;
   }
 
-  
+  #hebergements {
+    width: 100%;
+    background-color: var(--couleur4);
+    display: flex;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .maincontainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 
   footer a {
     text-decoration: none;
