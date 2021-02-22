@@ -24,11 +24,6 @@ body > * {
 }
 
 
-section {
-/*   max-width: 95vw; */
-  /* margin: auto; */
-  /* border: 1px solid red; */
-}
 section h1 {
   width: 100%;
   display: flex;
