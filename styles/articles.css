@@ -28,7 +28,7 @@ header{
 
   
 nav a {
-  padding: 30px 50px;
+  /* padding: 30px 50px; */
   text-decoration: none;
   color: black;
   border-top: 3px solid transparent;
@@ -44,26 +44,16 @@ nav a:hover {
 
 /******** MAIN CONTENT ********/
 /******************************/
-main {
-  display: flex;
-}
 
-.maincontainer{
-  display: flex;
-  width: 100%;
-  margin-bottom: 1rem;
-}
 
-.maincontainer section h1{
+main section h1{
   display: flex;
   font-size: 1.1em;
   padding-left: 2rem;
   margin-bottom: 35px;
-  
-  
 }
 
-.maincontainer section h1 i{
+main section h1 i{
   margin-right: 5%;
 }
 
@@ -105,8 +95,51 @@ main {
 /*** POPULAIRES ***/
 
 #populaires{
-  background: var(--couleur4);
-}
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--couleur4);
+    /* max-width: 100%; */
+  }
+
+  #populaires article {
+    display: flex;
+    width: 100%;
+    height: 210px;
+    padding: 0.2rem;
+    margin: 1rem 0rem;
+  }
+  
+  #populaires article img{
+    border:3px solid white;
+    object-fit: cover;
+    width: calc(100% - 6px);
+    border-radius: 1rem  1rem 0 0;
+  }
+  
+  
+  #populaires article * {
+    margin: 0;
+  }
+  
+  #populaires h2 {
+    font-size: 1.3rem;
+    padding-left: 10px;
+  }
+  
+  #populaires article img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+  }
+  
+  #populaires article p {
+    margin: 0rem;
+    padding-left: 10px;
+  }
+  
+  #populaires article .content{
+    padding: 0.5rem
+  }
 
 #populaires article {
   display: flex;
@@ -116,6 +149,7 @@ main {
   margin: 2rem 1rem;
   border-radius: 1rem;
   box-shadow: var(--ombre);
+  max-width: 300px;
 }
 
 #populaires article img {
@@ -229,8 +263,8 @@ footer a {
 
 
   nav a {
-    width: 100%;
-    height: 50px;
+    /* width: 100%; */
+    /* height: 50px; */
     display: flex;
     border-bottom: 3px rgb(231, 231, 231) solid;
     border-top: 3px transparent;
@@ -241,14 +275,17 @@ footer a {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: black;
-    padding: 10px 20px;
-    width: 100%;
+    /* padding: 10px 20px; */
+    height : 100%;
+    width:100%;
+    /* border: 1px solid; */
   }
 
   nav a:hover{
     border-bottom: 3px solid var(--couleur3);
-    margin: -3px;
+    border-top: 3px solid transparent;
   }
 
   a#registerContainer {
@@ -275,58 +312,9 @@ footer a {
     width: 35px;
   }
 
-  .maincontainer{
-  display: flex;
-  width: 100%;
-  flex-direction: column-reverse;
-  } 
 
-  #populaires{
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--couleur4);
-    max-width: 100%;
-  }
 
-  #populaires article {
-    display: flex;
-    width: 100%;
-    height: 210px;
-    padding: 0.2rem;
-    margin: 1rem 0rem;
-  }
   
-  #populaires article img{
-    border:3px solid white;
-    object-fit: cover;
-    width: calc(100% - 6px);
-    border-radius: 1rem  1rem 0 0;
-  }
-  
-  
-  #populaires article * {
-    margin: 0;
-  }
-  
-  #populaires h2 {
-    font-size: 1.3rem;
-    padding-left: 10px;
-  }
-  
-  #populaires article img {
-    width: 30%;
-    object-fit: cover;
-    border-radius: 1rem 0 0 1rem;
-  }
-  
-  #populaires article p {
-    margin: 0rem;
-    padding-left: 10px;
-  }
-  
-  #populaires article .content{
-    padding: 0.5rem
-  }
   
   #hebergements {
     background-color: white;
@@ -370,16 +358,6 @@ footer a {
     border: none;
   }
 
-  footer {
-   display: flex;
-   flex-direction: column ; 
-  }
-
-footer a {
-  text-decoration: none ;
-  color: rgb(41, 41, 41);
-}
-
 
 nav {
     display: grid;
@@ -389,18 +367,17 @@ nav {
     width: 100%;
     grid-template-columns: 50% 50%;
     justify-items: center;
+    grid-template-rows: 4rem 4rem;
 }
 
 nav img {
     grid-area: logo;
-    width: 50%;
+    width: 70%;
     place-self: flex-start;
 }
 
 nav a:nth-of-type(1) {
     grid-area: hebergement;
-    color: var(--couleur3);
-    border-bottom: 3px solid var(--couleur3) ;
 }
 nav a:nth-of-type(2) {
     grid-area: activite;
@@ -409,7 +386,7 @@ nav a:nth-of-type(3) {
     grid-area: inscrire;
     color: var(--couleur3);
     font-weight: 600;
-    border: transparent;
+    border: 3px solid transparent;
 }
 
 
@@ -420,8 +397,11 @@ nav a:nth-of-type(3) {
 @media screen and (min-width: 768px) {
 
 nav {grid-template-areas:
-"logo hebergement activite inscrire";grid-template-columns: 40% 20% 20% 20%;}
+"logo hebergement activite inscrire";grid-template-columns: 10fr 2fr 2fr 1fr;grid-template-rows: 5rem;}
 
+nav img {
+    width: 20%;
+}
 section#hebergements{
   display:flex;
   flex-wrap:wrap;
@@ -443,19 +423,30 @@ section#hebergements{
     display: none;
   }
 
- 
+ nav a:nth-of-type(3) {
+   
+/* place-items: self-end; */
+   
+justify-self: end;
+   
+padding: 0;
+   
+align-self: center;
+   
+width: fit-content;
+}
+
 
   nav a {
       text-decoration: none;
-      color: black;
       border-top: 3px solid transparent;
       border-bottom: 3px solid transparent;
-      padding: 30px 20px;
   }
     
   nav a:hover {
-      border-top: 3px solid var(--couleur3) ;
+      border-top: 3px solid var(--couleur3);
       color: var(--couleur3);
+      border-bottom: 3px solid transparent;
   }
     
   nav span {
@@ -495,33 +486,9 @@ section#hebergements{
 }
 
 @media screen AND (min-width:1024px){
-    .maincontainer{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
-    #hebergements{
-  width: 75%;
-  background-color: var(--couleur4);
-  display: flex;
-  border-radius: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-  #populaires{
-  background: var(--couleur4);
-  border-radius: 1rem;
-  max-width: 350px;
-  width: 39%;
-}
 
 #hebergements article {
   max-width:300px;
 }
 }
-
-
-
-

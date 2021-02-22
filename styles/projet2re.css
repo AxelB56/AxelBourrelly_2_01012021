@@ -3,7 +3,6 @@
 @import url("etoiles.css");
 @import url("articles.css");
 @import url("footer.css");
-
 :root {
   --couleur1: #deebff;
   --couleur2: #d9d9d9;
@@ -11,18 +10,16 @@
   --couleur4: #f2f2f2;
   --ombre: 0px 0px 1rem #bfbfbf;
 }
+
 * {
-    /* border: 1px solid; */
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body > * {
-
-    max-width: 1440px;
-    margin:auto;
+body>* {
+  max-width: 1375px;
+  margin: auto;
   width: 100%;
 }
-
 
 section h1 {
   width: 100%;
@@ -30,11 +27,12 @@ section h1 {
   justify-content: space-between;
   font-size: 1.4em;
 }
+
 main {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
-}
-
+  } 
 .para {
   font-size: 1rem;
   display: flex;
@@ -91,6 +89,13 @@ button.button:after {
   font-weight: bold;
 }
 
+h2, section {
+  font-size: 1.1rem;
+}
+
+section#informations {
+  width: 90%;
+}
 @media (max-width: 700px) {
   div#menuContainer {
     order: 3;
@@ -102,17 +107,35 @@ button.button:after {
   .button {
     border-radius: 14px;
   }
-
   button.button:after {
     content: "rechercher";
     font-family: "Raleway";
     font-weight: initial;
   }
+      main{
+    /* display: flex; */
+    /* width: 100%; */
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+    #hebergements{
+  width: 73%;
+  background-color: var(--couleur4);
+  /* display: flex; */
+  border-radius: 1rem;
+  /* flex-wrap: wrap; */
+  justify-content: center;
 }
-
-h2,section {
-  font-size: 1.1rem;
+  #populaires{
+  background: var(--couleur4);
+  border-radius: 1rem;
+  max-width: 350px;
+  width: 39%;
 }
-
-
-
+}
+@media screen AND (min-width: 768px) {
+      #hebergements{
+  width: 60%;
+  }
+}
