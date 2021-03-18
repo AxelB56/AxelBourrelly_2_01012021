@@ -233,6 +233,10 @@ main section h1 i {
   text-decoration: none;
 }
 
+.filter:hover {
+  background-color: var(--couleur2);
+}
+
 /*** POPULAIRES ***/
 
 #populaires {
@@ -258,6 +262,10 @@ main section h1 i {
 
 #populaires article * {
   margin: 0;
+}
+
+#populaires article:hover{
+  transform: scale(1.02);
 }
 
 #populaires h2 {
@@ -319,6 +327,11 @@ main section h1 i {
 .activite {
   display: block;
 }
+
+.activite article:hover{
+    transform: scale(1.02);
+  }
+  
 
 /**** FOOTER ****/
 
